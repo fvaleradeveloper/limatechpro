@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimaTech Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a class= "menu" href="#about">Nosotros</a>
+                <a class= "menu" href="#services">Servicios</a>
+                <a class= "menu" href="#contact">Contacto</a>
+            </nav>
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <!--<p>Tecnología que funciona, servicio que inspira confianza.</p>-->
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="container text-center">
+            <img src="assets/tech-bg.jpg" alt="Taller" class="img1">
+            <h1>Bienvenido a LimaTech Pro</h1>
+            <p>Tecnología que funciona, servicio que inspira confianza.</p>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos una empresa dedicada a ofrecer servicios de alta calidad en los rubros de reparación de PC, asesorías, mantenimiento, además de la creación, implementación y soporte de aplicaciones web y móviles. 
+                Nuestro equipo de expertos está comprometido con brindarte soluciones rápidas y eficientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Instalación, reparación y actualización de PC</h3>
+                    <p>Soluciones para la actualización y reparación de tu PC. Instalación profesional de equipos nuevos.</p>
+                </div>
+                <div class="card">
+                    <h3>Mantenimiento Preventivo</h3>
+                    <p>Evita problemas futuros con mantenimientos regulares de limpieza, actualización de drivers y software, y revisión de hardware.</p>
+                </div>
+                <div class="card">
+                    <h3>Aplicaciones web y móbiles</h3>
+                    <p>Creación, implementación y mantenimiento de aplicaciones web y móviles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Síguenos en:</p>
+            <div>
+                <a href="https://whatsapp.com/limatechpro">Whatsapp</a>
+                <a href="https://facebook.com/limatechpro">Facebook</a>
+                <a href="https://instagram.com/limatechpro">Instagram</a>
+            </div>
+            <p>&copy; 2025 LimaTech Pro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

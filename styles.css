@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 4rem 0 0;
+    line-height: 4;
+    /*padding: 1rem 0 0;*/
+    scroll-padding-top: 5rem;
+}
+
+.header {
+    margin-top: 0px;
+    background: #fcfcfc;
+    /*color: white;*/
+    align-content: center;
+    padding: 1rem 0;
+    height: 200px;
+    width: 100%;
+    /*max-height: 300px;  */
+    position: fixed;
+    top: 0;
+
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header .container {
+    /*display: inline-flex; */
+    justify-content: space-between;
+    /*align-items: center;*/
+   /*max-height: 100%;*/
+}
+
+.logo {
+    margin: 10px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+/* Estilos para el contenedor del menú */
+.navbar {
+    display: flex; /* Usa Flexbox para alinear los elementos horizontalmente */
+    justify-content: center; /* Distribuye el espacio entre los elementos de manera uniforme */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px 20px 20px 20px; /* Añade un poco de espacio a los lados del contenedor */
+    background-color: #ecc827; /* Color de fondo del contenedor del menú */
+  }
+  
+  /* Estilos para cada enlace del menú */
+  .menu {
+    flex: 0; /* Hace que cada enlace ocupe una cantidad igual de espacio */
+    text-align: center; /* Centra el texto dentro de cada caja */
+    padding: 2px 15px; /* Añade espacio vertical dentro de cada caja */
+    margin: 0 10px; /* Añade espacio entre las cajas */
+    background-color: #ffffff; /* Color de fondo de las cajas */
+    border: 1px solid #ddd; /* Añade un borde a las cajas */
+    border-radius: 8px; /* Añade bordes redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #333; /* Color del texto */
+    transition: background-color 0.3s, color 0.3s; /* Añade una transición suave para los cambios de color */
+  }
+  
+  /* Cambios al pasar el cursor sobre cada enlace */
+  .menu:hover {
+    background-color: #ffffcc; /* Color de fondo amarillo tenue al pasar el cursor */
+    color: #000; /* Cambia el color del texto a negro para mejor contraste */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactuable */
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  /* Opcional: Cambiar el color del texto a amarillo al pasar el cursor */
+  .menu:hover {
+    background-color: #e9e9c3;
+    color: #7e5d04;
+    cursor: pointer;
+  }
+  
+.hero {
+    margin-top: 200px;
+    position: relative;
+    color: rgb(92, 106, 170);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero::before {
+    content: '';
+    position: fixed;
+    top: 3;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/tech-bg.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about, .services, .contact {
+    padding: 2rem 0;
+}
+
+.service-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background: #a59d9d;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 600px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+footer {
+    background: #868697;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    min-height: 60px;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
